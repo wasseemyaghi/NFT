@@ -3,9 +3,10 @@
   --secondary-color: rgb(26, 26, 26);
   --section-margin: 130px 0 0;
   --text-body: 1.5rem;
+  --gray: gray;
 }
 .text-gray{
-  color: gray;
+  color: var(--gray);
 }
 .container {
   padding-left: 80px;
@@ -370,7 +371,7 @@ body {
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-bottom-color: gray;
+  border-bottom-color: var(--gray);
 }
 .diamond-arrow:after {
   content: '';
@@ -380,14 +381,14 @@ body {
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-top-color: gray;
+  border-top-color: var(--gray);
 }
 .diamond-arrow::before{
   content: '';
   position: absolute;
   width: 220px;
   height: 3px;
-  background-color: gray;
+  background-color: var(--gray);
   left: -215px;
   top: 26px;
 }
