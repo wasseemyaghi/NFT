@@ -24,7 +24,6 @@ html {
 body {
   background-color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
-  min-height: 100vh;
   max-width: 100vw;
 }
 .nav {
@@ -37,6 +36,7 @@ body {
   top: 0;
   width: 100%;
   backdrop-filter: blur(10px);
+  z-index: 1;
 }
 .nav .logo img {
   width: 45px;
@@ -78,7 +78,7 @@ body {
   display: none;
 }
 .main {
-  margin-top: 75px;
+  margin-top: 90px;
 }
 .hero-section {
   display: flex;
@@ -86,8 +86,11 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.hero-info{
+  margin-top: 25px;
+}
 .hero-info > *:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .hero-section .hero-info {
   width: 25%;
@@ -118,7 +121,7 @@ body {
   color: white;
   font-size: 7rem;
   font-weight: bold;
-  padding: 40px 80px;
+  padding: 0px 80px;
 }
 .hero-section .hero-title i {
   padding-left: 10px;
@@ -143,10 +146,10 @@ body {
   vertical-align: middle;
 }
 .arrow-right:before {
+  content: "";
   width: 400px;
   height: 3px;
   background: white;
-  content: "";
   display: inline-block;
   vertical-align: middle;
 }
@@ -191,7 +194,7 @@ body {
 }
 .section_secondery {
   background-color: rgb(99 99 117 / 17%);
-  width: 360px;
+  width: 100%;
   height: 260px;
   padding: 50px;
   border-radius: 10px;
@@ -312,17 +315,15 @@ body {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 700px;
 }
 .section-w .section-w-one{
+    position: relative;
     background-color: rgb(99 99 117 / 17%);
     width: 40%;
     height: 400px;
     border-radius: 10px;
-    position: relative;
 }
 .section-w .section-w-one img{
-    height: 500px;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -331,7 +332,7 @@ body {
 }
 .section-w .section-info{
   width: 60%;
-  padding-left: 100px;
+  margin-left: 80px;
 }
 .arrow-dotted::before {
   content: "";
@@ -360,4 +361,33 @@ body {
 .section-info .section-info-p {
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 1.2;
+}
+.diamond-arrow {
+  position: relative;
+  left: 485px;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: gray;
+}
+.diamond-arrow:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: gray;
+}
+.diamond-arrow::before{
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 3px;
+  background-color: gray;
+  left: -215px;
+  top: 26px;
 }
