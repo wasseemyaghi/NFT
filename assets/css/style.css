@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(174, 252, 204);
+  --primary-color: rgb(143,255,106);
   --secondary-color: rgb(26, 26, 26);
   --section-margin: 130px 0 0;
   --text-body: 1.5rem;
@@ -396,4 +396,63 @@ body {
 .products{
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
+  margin-top: 50px;
+  grid-gap: 25px;
+}
+.card-product{
+  background-color: #222224;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: grid;
+  grid-template-areas: "image image image"
+  "text .  priceETH"
+  "priceUSD priceUSD priceUSD"
+  "cardbutton cardbutton cardbutton";
+}
+.card-product-image{
+  width: 100%;
+  border-radius: 10px;
+  grid-area: image;
+}
+.card-title{
+  color: var(--white);
+  grid-area: text;
+  margin-top: 10px;
+}
+.card-price-USD{
+  color: #6a696b;
+  grid-area: priceUSD;
+  text-align: end;
+}
+.card-price-ETH{
+  color: var(--white);
+  grid-area: priceETH;
+  margin: 12px 0 12px 15px;
+  text-align: end;
+}
+.card-button{
+  border: 1px solid var(--primary-color);
+  padding: 15px 30px;
+  background: none;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  grid-area: cardbutton;
+  margin-top: 25px;
+}
+.product-info{
+  text-align: center;
+  color: white;
+  margin-top: 130px;
+}
+.product-info-title{
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.product-info-text{
+  line-height: 2;
 }

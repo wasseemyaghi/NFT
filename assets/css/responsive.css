@@ -126,4 +126,14 @@
   .diamond-arrow{
     display: none;
   }
+  .products{
+    grid-template-columns: 1fr;
+  }
+  .product-info{
+    margin-top: 90px;
+    padding: 0 15px
+  }
+  .product-info-title{
+    font-size: 2rem;
+  }
 }
