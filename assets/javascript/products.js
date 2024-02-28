@@ -73,10 +73,3 @@ NFT.forEach(product => {
                         `
     productscontainer.appendChild(cardProduct);
 });
-
-let buttoncard = document.querySelector("card-button");
-
-buttoncard.addEventListener("click" , () => {
-    buttoncard.style.backgroundColor = rgb(143,255,106);
-    buttoncard.style.color = 'black';
-});
