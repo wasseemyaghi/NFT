@@ -443,6 +443,10 @@ body {
   grid-area: cardbutton;
   margin-top: 25px;
 }
+.card-button.clicked{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
 .product-info{
   text-align: center;
   color: white;
