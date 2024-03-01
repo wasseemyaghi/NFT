@@ -456,3 +456,41 @@ body {
 .product-info-text{
   line-height: 2;
 }
+.accordion{
+  margin-top: 100px;
+}
+.accordion_content{
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.accordion_content.open{
+  padding-bottom: 20px;
+}
+.accordion_content:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #333135;
+  bottom: 0;
+}
+.accordion_answer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fafafa;
+  cursor: pointer;
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+.accordion_answer span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.accordion_question{
+  color: #606062;
+  height: 0;
+  transition: 0.2s;
+  line-height: 1.8;
+}
