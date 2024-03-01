@@ -73,3 +73,11 @@ NFT.forEach(product => {
                         `
     productscontainer.appendChild(cardProduct);
 });
+
+const buttoncard = document.querySelectorAll(".card-button");
+
+buttoncard.forEach(button => {
+    button.addEventListener("click" , () => {
+        button.classList.add("clicked");
+    });
+});
