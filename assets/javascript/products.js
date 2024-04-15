@@ -64,13 +64,17 @@ NFT.forEach(product => {
 
     cardProduct.innerHTML = `
 
-                            <img src=${product.img} alt=${product.title} class="card-product-image"/>
+                            <img src=${product.img} alt=${product.title} class="card-product-image" width="600" height="350"/>
                             <h2 class="card-title">${product.title}</h2>
                             <span class="card-price-ETH">${product.price_ETH}</span>
                             <span class="card-price-USD">${product.price}</span>
                             <button class="card-button">Buy Now</button>
 
                         `
+    cardProduct.addEventListener('click', () => {
+        const productUrl = `detailsproduct.html?id=${product.id}&name=${product.title}&price=${product.price}&img=${product.img}`;
+        window.location.href = productUrl;
+    });
     productscontainer.appendChild(cardProduct);
 });
 const buttoncard = document.querySelectorAll(".card-button");
