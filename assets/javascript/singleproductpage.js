@@ -17,7 +17,6 @@ function getQueryParams(url) {
         document.getElementById("image").src =  queryParams.img;
         document.getElementById("title").innerHTML =  queryParams.name;
         document.getElementById("para").innerHTML =  queryParams.price;
-
     // const urlParams = new URLSearchParams(window.location.search);
     // const productId = urlParams.get('price');
     // const productName = urlParams.get('name');
