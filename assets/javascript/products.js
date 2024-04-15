@@ -72,7 +72,7 @@ NFT.forEach(product => {
 
                         `
     cardProduct.addEventListener('click', () => {
-        const productUrl = `detailsproduct.html?id=${product.id}&name=${product.title}&price=${product.price}&img=${product.img}`;
+        const productUrl = `singleproductpage.html?id=${product.id}&name=${product.title}&price=${product.price}&img=${product.img}`;
         window.location.href = productUrl;
     });
     productscontainer.appendChild(cardProduct);
