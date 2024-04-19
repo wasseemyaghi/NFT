@@ -3,55 +3,91 @@ const NFT = [
         id: new Date() ,
         img: '/assets/imgs/image1.jpg',
         title: "Cloud# 21" ,
-        color_palette: ["#d017ff" , "#e7b323" , "#ff383a"] , 
+        color_palette: [{colorname: "Pesto" , hexcolor: "#717332"} , {colorname: "Ripe Lemon" , hexcolor: "#f0e00f"} , {colorname: "Buccaneer" , hexcolor: "#633537"}] ,
         price: "$1.933 USD", 
         price_ETH: "3.42 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     }, 
     {
         id: new Date() ,
         img: '/assets/imgs/image2.jpg',
         title: "Cloud# 32" ,
-        color_palette: ["#e23558" , "#fd3e42" , "#323e58"] , 
+        color_palette: [{colorname: "Sea Buckthorn" , hexcolor: "#f99928"} , {colorname: "Athens Gray" , hexcolor: "#eeeff3"} , {colorname: "Pomegranate" , hexcolor: "#f43f2a"}] , 
         price: "$2.987 USD", 
         price_ETH: "4.89 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     }, 
     {
         id: new Date() ,
         img: '/assets/imgs/image3.png',
         title: "Cloud# 25" ,
-        color_palette: ["#323e58" , "#e7b323" , "#f26d18"] , 
+        color_palette: [{colorname: "blue" , hexcolor: "#17e5b6"} , {colorname: "Pickled Bean" , hexcolor: "#664222"} , {colorname: "Shuttle Gray" , hexcolor: "#586268"}] , 
         price: "$1.85 USD", 
         price_ETH: "7.89 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     },
     {
         id: new Date() ,
         img: '/assets/imgs/image4.webp',
         title: "Cloud# 53" ,
-        color_palette: ["#f79616" , "#ff383a" , "#364361"] , 
+        color_palette: [{colorname: "Carrot Orange" , hexcolor: "#ef972c"} , {colorname: "Razzmatazz" , hexcolor: "#e20051"} , {colorname: "Bright Gray" , hexcolor: "#37384c"}] ,
         price: "$2.256 USD",
         price_ETH: "2.85 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     },
     {
         id: new Date() ,
         img: '/assets/imgs/image5.jpg',
         title: "Cloud# 12" ,
-        color_palette: ["#0079ff" , "#e1ac8b" , "#364361"] , 
+        color_palette: [{colorname: "Iron" , hexcolor: "#cccdcf"} , {colorname: "Governor Bay" , hexcolor: "#3332cc"} , {colorname: "Maroon" , hexcolor: "#850000"}] , 
         price: "$1.888 USD", 
         price_ETH: "3.85 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     },
     {
         id: new Date() ,
         img: '/assets/imgs/image6.jpg',
         title: "Cloud# 33",
-        color_palette: ["#ff880c" , "#e0864c" , "#d3071c"] ,
+        color_palette: [{colorname: "Sail" , hexcolor: "#a2e6f5"} , {colorname: "Barberry" , hexcolor: "#edde12"} , {colorname: "Midnight Blue" , hexcolor: "#003466"}] ,
         price: "$2.987 USD", 
         price_ETH: "3.37 ETH",
         category: "",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.",
+        details: [
+            { name: 'shipping and returns', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Features', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' },
+            { name: 'Details', value: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum alias dicta necessitatibus odio aliquam repellat excepturi, optio perspiciatis facilis, reprehenderit ducimus est unde modi repudiandae atque! Porro animi aperiam ea.' }
+        ]
     }
 ];
 
@@ -72,8 +108,9 @@ NFT.forEach(product => {
 
                         `
     cardProduct.addEventListener('click', () => {
-        const productUrl = `detailsproduct.html?id=${product.id}&name=${product.title}&price=${product.price}&img=${product.img}`;
+        const productUrl = `singleproductpage.html?id=${product.id}&name=${product.title}&price=${product.price}&img=${product.img}&description=${product.description}`;
         window.location.href = productUrl;
+        localStorage.setItem('selectedProduct', JSON.stringify(product));
     });
     productscontainer.appendChild(cardProduct);
 });
