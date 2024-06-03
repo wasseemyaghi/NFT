@@ -25,8 +25,8 @@ function getQueryParams(url) {
 
         smallImage.forEach((image) => {
                 image.addEventListener("click", (e) => {
-                        mainImage.src = e.target.src
-                })
+                        mainImage.src = e.target.src;
+                });
         });
 
         let minus = document.querySelector(".minus");
@@ -116,3 +116,35 @@ function removeopen(index){
                 dotcolors[i].setAttribute('data-tooltip', colors[i].colorname);
 
         };
+
+        const carouselimage = document.querySelectorAll(".image-box");
+
+        const bulletsofcolor = document.querySelectorAll(".dotcolor");
+
+        for(let i = 0; i < bulletsofcolor.length; i++){
+                bulletsofcolor[i].addEventListener("click" , () => {
+                        for(let j = 0; j < bulletsofcolor.length; j++){
+                                bulletsofcolor[j].classList.remove("active");
+                                carouselimage[j].classList.remove("active");
+                        }
+                        bulletsofcolor[i].classList.add("active");
+
+
+                        carouselimage[i].classList.add("active");
+
+                        mainImage.src = smallImage[i].src;
+                });
+        };
+
+for(let i = 0; i < carouselimage.length; i++){
+        carouselimage[i].addEventListener("click" , () => {
+                for(let j = 0; j < carouselimage.length; j++){
+                                carouselimage[j].classList.remove('active');
+                        if (bulletsofcolor[j]) {
+                                bulletsofcolor[j].classList.remove('active');
+                        }
+                };
+                        carouselimage[i].classList.add("active");
+                        bulletsofcolor[i].classList.add("active");
+                });
+};
