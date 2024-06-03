@@ -105,50 +105,49 @@
   .section .section_primary img {
     max-height: 100%;
   }
-  .section-w{
+  .section-w {
     flex-direction: column;
     padding: 50px 20px 20px;
   }
-  .section-w .section-w-one{
+  .section-w .section-w-one {
     width: 100%;
   }
-  .section-w .section-w-one img{
+  .section-w .section-w-one img {
     max-height: 100%;
   }
-  .section-w .section-info{
+  .section-w .section-info {
     width: 100%;
     padding: 40px 0;
     margin: 0;
   }
-  .section-info .section-info-h2{
+  .section-info .section-info-h2 {
     font-size: 2rem;
   }
-  .diamond-arrow{
+  .diamond-arrow {
     display: none;
   }
-  .products{
+  .products {
     grid-template-columns: 1fr;
   }
-  .product-info{
+  .product-info {
     margin-top: 90px;
-    padding: 0 15px
+    padding: 0 15px;
   }
-  .product-info-title{
+  .product-info-title {
     font-size: 2rem;
   }
-  .singleproductpage{
+  .singleproductpage {
     flex-direction: column;
-    margin: 12px;
   }
-  .small-images{
+  .small-images {
     padding: 0;
     margin-top: 12px;
   }
-  .left-box{
+  .left-box {
     width: 100%;
   }
   .right-box {
     width: 100%;
     padding: 0;
-}
+  }
 }
